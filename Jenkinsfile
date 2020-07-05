@@ -2,7 +2,8 @@
 // Copyright (c) 2019 Gennady Trafimenkov
 
 pipeline {
-    agent { docker { image 'ubuntu:18.04' } }
+    agent any
+
     stages {
         stage('build') {
             steps {
